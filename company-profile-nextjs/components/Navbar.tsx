@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -7,9 +8,7 @@ import { useState } from "react";
 const links = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
     { label: "Projects", href: "/projects" },
-    { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -17,32 +16,41 @@ export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <header className="navbar">
-            <div className="nav-container">
-                <Link href="/" className="brand" onClick={() => setMenuOpen(false)}>
-                    revora<span>.</span>
+        <header className="site-header">
+            <nav className="navbar" aria-label="Main navigation">
+                <Link
+                    href="/"
+                    className="nav-logo"
+                    onClick={() => setMenuOpen(false)}
+                >
+                    <span className="nav-logo-mark">R</span>
+                    REVORA STUDIO
                 </Link>
 
-                <button 
-                    className="menu-toogle"
+                <button
                     type="button"
-                    aria-label={menuOpen ? "Close menu" : "Open menu"}
+                    className="nav-menu-button"
+                    aria-label={menuOpen ? "Close navigation" : "Open navigation"}
                     aria-expanded={menuOpen}
+                    aria-controls="main-nav-links"
                     onClick={() => setMenuOpen(!menuOpen)}
                 >
-                    <span />
-                    <span />
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
 
-                <nav
+                <div
+                    id="main-nav-links"
                     className={`nav-links ${menuOpen ? "nav-open" : ""}`}
-                    aria-label="Main navigation"
                 >
                     {links.map((link) => {
                         const isActive =
                             link.href === "/"
                                 ? pathname === "/"
-                                : pathname === link.href || pathname.startsWith(`${link.href}/`);
+                                : pathname === link.href ||
+                                  pathname.startsWith(`${link.href}/`);
+
                         return (
                             <Link
                                 key={link.href}
@@ -58,13 +66,13 @@ export default function Navbar() {
 
                     <Link
                         href="/contact"
-                        className="nav-cta"
+                        className="nav-contact"
                         onClick={() => setMenuOpen(false)}
                     >
                         Let&apos;s Talk <span>&#8599;</span>
                     </Link>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </header>
     );
 }
