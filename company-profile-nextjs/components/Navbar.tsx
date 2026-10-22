@@ -61,7 +61,7 @@ export default function Navbar() {
                         className="nav-cta"
                         onClick={() => setMenuOpen(false)}
                     >
-                        Let&apos;s Talk <span>↗</span>
+                        Let&apos;s Talk <span>&#8599;</span>
                     </Link>
                 </nav>
             </div>

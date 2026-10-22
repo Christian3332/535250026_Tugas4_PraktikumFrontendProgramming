@@ -1,0 +1,13 @@
+@import "./navbar.css";
+@import "./home.css";
+@import "./footer.css";
+
+/* Style global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}

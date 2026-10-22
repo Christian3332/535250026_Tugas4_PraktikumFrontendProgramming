@@ -131,7 +131,7 @@ export default function Home() {
             </div>
 
             <Link href="/services" className="text-link">
-              All services <span>↗</span>
+              All services <span>&#8599;</span>
             </Link>
           </div>
 
@@ -146,7 +146,7 @@ export default function Home() {
                 </div>
 
                 <span className="service-tag">{service.tag}</span>
-                <span className="service-arrow">↗</span>
+                <span className="service-arrow">&#8599;</span>
               </article>
             ))}
           </div>
@@ -165,7 +165,7 @@ export default function Home() {
           </div>
 
           <Link href="/projects" className="text-link">
-            View all projects <span>↗</span>
+            View all projects <span>&#8599;</span>
           </Link>
         </div>
 
@@ -179,7 +179,7 @@ export default function Home() {
               <div className={`project-art ${project.color}`}>
                 <span className="project-brand">{project.name}</span>
                 <span className="project-shape">{project.shape}</span>
-                <span className="project-view">VIEW PROJECT ↗</span>
+                <span className="project-view">VIEW PROJECT &#8599;</span>
               </div>
 
               <div className="project-meta">
@@ -187,7 +187,7 @@ export default function Home() {
                   <p>{project.category}</p>
                   <h3>{project.title}</h3>
                 </div>
-                <span className="project-meta-arrow">↗</span>
+                <span className="project-meta-arrow">&#8599;</span>
               </div>
             </Link>
           ))}
@@ -205,7 +205,7 @@ export default function Home() {
           </h2>
 
           <Link href="/contact" className="contact-button">
-            Start a conversation <span>↗</span>
+            Start a conversation <span>&#8599;</span>
           </Link>
         </div>
       </section>
