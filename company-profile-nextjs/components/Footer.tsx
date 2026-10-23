@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="footer-main">
                 <div className="footer-brand">
                     <Link href="/" className="brand">
-                        revora<span>.</span>
+                        Revora<span>.</span>
                     </Link>
                     <p>
                         We turn bold ideas into meaningful digital experiences.
@@ -22,7 +22,7 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-contact">
-                    <p className="footer-heading">Let$apos;s connect</p>
+                    <p className="footer-heading">Let&apos;s connect</p>
                     <a href="mailto:revorastudio@gmail.com">
                         revorastudio@gmail.com
                     </a>
@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-bottom">
-                <p>$copy {new Date().getFullYear()} Revora Studio.</p>
+                <p>&copy; {new Date().getFullYear()} Revora Studio.</p>
                 <p>Designed with intention</p>
             </div>
         </footer>

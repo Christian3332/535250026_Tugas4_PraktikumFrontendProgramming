@@ -57,7 +57,7 @@ export default function Home() {
           <h1>
             Ideas into
             <br />
-            <span>impcatful</span> digital
+            <span>impactful</span> digital
             <br />
             experiences.
           </h1>
