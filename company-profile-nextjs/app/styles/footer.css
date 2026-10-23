@@ -106,4 +106,37 @@
     line-height: 1.7;
 }
 
+/* TABLET */
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 56px 28px 24px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 40px;
+        padding-bottom: 44px;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+    .footer {
+        padding: 64px 32px 28px;
+    }
+
+    .footer-main {
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 60px;
+    }
+}
+
 
