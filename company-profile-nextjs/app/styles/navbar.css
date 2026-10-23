@@ -1,4 +1,5 @@
-/* NAVBAR */
+/* Navbar - Mobile First */
+
 .site-header {
     position: sticky;
     top: 0;
@@ -10,154 +11,65 @@
 }
 
 .navbar {
-    width: min(1200px, 100%);
-    min-height: 82px;
-    margin: 0 auto;
-    padding: 0 32px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 32px;
+    gap: 12px;
+    width: 100%;
+    min-height: 72px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
+/* LOGO */
+
 .nav-logo {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    font-size: 19px;
+    color: var(--foreground);
+    font-size: 16px;
     font-weight: 800;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.5px;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .nav-logo-mark {
-    display: grid;
-    place-items: center;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: var(--accent);
-    color: var(--foreground);
-    font-size: 17px;
-}
-.nav-links {
     display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.nav-link {
-    position: relative;
-    padding: 8px 0;
-    color: var(--muted);
-    font-size: 13px;
-    font-weight: 600;
-    transition: color 0.2s ease;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: var(--foreground);
-}
-
-.nav-link.active::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background: var(--foreground);
-    content: "";
-}
-
-.nav-contact {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 13px 18px;
-    border: 1px solid var(--foreground);
-    border-radius: 999px;
-    background: var(--foreground);
-    color: var(--background);
-    font-size: 13px;
-    font-weight: 600;
-    transition:
-        background 0.2s ease,
-        color 0.2s ease,
-        transform 0.2s ease;
-}
-
-.nav-contact:hover {
-    transform: translateY(-2px);
-    background: var(--accent);
-    color: var(--foreground);
-}
-
-.nav-menu-button {
-    display: none;
-    width: 42px;
-    height: 42px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    gap: 4px;
+    width: 32px;
+    height: 32px;
+}
+
+.nav-logo-mark span {
+    display: block;
+    width: 21px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--foreground);
+}
+
+/* TOMBOL MENU HP */
+
+.nav-menu-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
     gap: 5px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
     border: 1px solid var(--border);
     border-radius: 50%;
     background: transparent;
     color: var(--foreground);
-    font-size: 22px;
     cursor: pointer;
-}
-
-/* TABLET DAN HP */
-@media (max-width: 760px) {
-    .navbar {
-        min-height: 72px;
-        padding: 0 20px;
-    }
-
-    .nav-menu-button {
-        display: flex;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 72px;
-        right: 0;
-        left: 0;
-        display: none;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        padding: 16px 20px 24px;
-        border-bottom: 1px solid var(--border);
-        background: var(--background);
-    }
-
-    .nav-links.nav-open {
-        display: flex;
-    }
-
-    .nav-link {
-        padding: 16px 0;
-        border-bottom: 1px solid var(--border);
-    }
-
-    .nav-link.active::after {
-        display: none;
-    }
-
-    .nav-contact {
-        margin-top: 16px;
-    }
-}
-
-@media (max-width: 380px) {
-    .navbar {
-        padding: 0 14px;
-    }
-
-    .nav-logo {
-        font-size: 16px;
-    }
 }
