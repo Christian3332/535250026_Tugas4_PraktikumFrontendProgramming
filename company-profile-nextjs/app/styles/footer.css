@@ -46,3 +46,64 @@
     line-height: 1.8;
 }
 
+/* NAVIGASI DAN KONTAK */
+
+.footer-nav,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.footer-heading {
+    margin: 0 0 4px;
+    color: var(--background);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-nav a,
+.footer-contact a {
+    color: rgba(247, 246, 240, 0.65);
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.footer-nav a:hover,
+.footer-contact a:hover {
+    color: var(--accent);
+}
+
+.footer-contact > p:not(.footer-heading) {
+    margin: 0;
+    color: rgba(247, 246, 240, 0.65);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* BAGIAN BAWAH */
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: rgba(247, 246, 240, 0.55);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
