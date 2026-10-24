@@ -1,6 +1,7 @@
 @import "./navbar.css";
 @import "./home.css";
 @import "./footer.css";
+@import "./components.css";
 
 :root {
   --background: #f7f6f0;
