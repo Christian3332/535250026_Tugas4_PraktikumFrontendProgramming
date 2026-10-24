@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { projects } from "../data/project"
 
 const services = [
   {
@@ -18,25 +19,6 @@ const services = [
     title: "Web Development",
     description: "Turning creative into responsive, functional websites.",
     tag: "Development",
-  },
-];
-
-const projects = [
-  {
-    category: "Brand Identity",
-    title: "A new identity for modern living.",
-    name: "Aurelia",
-    color: "project-aurelia",
-    shape: "A",
-    slug: "aurelia-brand-identity",
-  },
-  {
-    category: "Web Design",
-    title: "Digital experience for the next generation.",
-    name: "Nuvora",
-    color: "project-nuvora",
-    shape: "N",
-    slug: "nuvora-website",
   },
 ];
 
